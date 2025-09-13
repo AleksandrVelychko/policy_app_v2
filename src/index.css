@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base document tweaks (optional) */
+body {
+  @apply bg-gray-100 text-gray-900 antialiased;
+  margin: 0;
+}
+
+a {
+  @apply text-blue-600 hover:text-blue-700 font-medium underline-offset-2 hover:underline;
+}
+
+button {
+  @apply inline-flex items-center rounded-md bg-blue-600 text-white px-4 py-2 text-sm font-semibold shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition;
+}
+
+/* Dark mode (if user prefers) */
+@media (prefers-color-scheme: dark) {
+  body { @apply bg-gray-900 text-gray-100; }
+}
